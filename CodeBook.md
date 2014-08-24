@@ -41,8 +41,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 *************************************************************************
 
-##  2.- Extracts only the measurements on the mean and standard deviation 
-        for each measurement.
+##  2.- Extracts only the measurements on the mean and standard deviation for each measurement.
 
 2.1. Read the features.txt file from the "/UCI HAR Dataset" folder and 
      store the data in a variable called "features"
