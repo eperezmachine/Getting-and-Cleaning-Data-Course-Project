@@ -1,4 +1,6 @@
-# Course Project
+# Getting and Cleaning Data - Course Project 
+## ENRIQUE PÉREZ PÉREZ
+## eperezmachine@gmail.com 
 #
 # Steps.
 # 1.- Merges the training and the test sets to create one data set.
@@ -87,8 +89,24 @@ names(xmsMergeData)
 # [61] "fBodyBodyAccJerkMag mean"  "fBodyBodyAccJerkMag std"   "fBodyBodyGyroMag mean"     "fBodyBodyGyroMag std"     
 # [65] "fBodyBodyGyroJerkMag mean" "fBodyBodyGyroJerkMag std"  
 trueData <- cbind(sMergeData, yMergeData, xmsMergeData)
-dim(trueData) 
-# [1] 10299    68
+names(trueData)
+# [1] "Subject"                   "Activity"                   "tBodyAcc mean X"           "tBodyAcc mean Y"          
+# [5] "tBodyAcc mean Z"           "tBodyAcc std X"             "tBodyAcc std Y"            "tBodyAcc std Z"           
+# [9] "tGravityAcc mean X"        "tGravityAcc mean Y"         "tGravityAcc mean Z"        "tGravityAcc std X"        
+# [13] "tGravityAcc std Y"         "tGravityAcc std Z"         "tBodyAccJerk mean X"       "tBodyAccJerk mean Y"      
+# [17] "tBodyAccJerk mean Z"       "tBodyAccJerk std X"        "tBodyAccJerk std Y"        "tBodyAccJerk std Z"       
+# [21] "tBodyGyro mean X"          "tBodyGyro mean Y"          "tBodyGyro mean Z"          "tBodyGyro std X"          
+# [25] "tBodyGyro std Y"           "tBodyGyro std Z"           "tBodyGyroJerk mean X"      "tBodyGyroJerk mean Y"     
+# [29] "tBodyGyroJerk mean Z"      "tBodyGyroJerk std X"       "tBodyGyroJerk std Y"       "tBodyGyroJerk std Z"      
+# [33] "tBodyAccMag mean"          "tBodyAccMag std"           "tGravityAccMag mean"       "tGravityAccMag std"       
+# [37] "tBodyAccJerkMag mean"      "tBodyAccJerkMag std"       "tBodyGyroMag mean"         "tBodyGyroMag std"         
+# [41] "tBodyGyroJerkMag mean"     "tBodyGyroJerkMag std"      "fBodyAcc mean X"           "fBodyAcc mean Y"          
+# [45] "fBodyAcc mean Z"           "fBodyAcc std X"            "fBodyAcc std Y"            "fBodyAcc std Z"           
+# [49] "fBodyAccJerk mean X"       "fBodyAccJerk mean Y"       "fBodyAccJerk mean Z"       "fBodyAccJerk std X"       
+# [53] "fBodyAccJerk std Y"        "fBodyAccJerk std Z"        "fBodyGyro mean X"          "fBodyGyro mean Y"         
+# [57] "fBodyGyro mean Z"          "fBodyGyro std X"           "fBodyGyro std Y"           "fBodyGyro std Z"          
+# [61] "fBodyAccMag mean"          "fBodyAccMag std"           "fBodyBodyAccJerkMag mean"  "fBodyBodyAccJerkMag std"  
+# [65] "fBodyBodyGyroMag mean"     "fBodyBodyGyroMag std"      "fBodyBodyGyroJerkMag mean" "fBodyBodyGyroJerkMag std"  
 #
 #
 #
@@ -112,8 +130,6 @@ for (i in 1:30) {
     }
 }
 setwd("D:/005 ClassGCD/005 Course Project/data")
-getwd()
-# [1] "D:/005 ClassGCD/005 Course Project/data"
 write.table(meansData, "TidyData.txt",row.name=FALSE)
 #
 #
