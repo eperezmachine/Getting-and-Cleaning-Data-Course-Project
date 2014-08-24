@@ -1,6 +1,7 @@
 # Getting and Cleaning Data 
   Course Project 
   Code Book
+  
 *************************************************************************
  Code Book describes the variables, the data and any transformations 
  or work that performed to clean up the data
@@ -73,8 +74,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 *************************************************************************
 
-##  5. Creates a second, independent tidy data set with the average of 
-       each variable for each activity and each subject.
+##  5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 5.1. Finally, generate a tidy data set with the average of each measurement 
      for each activity and each subject. We create a data matrix with 30 
@@ -87,8 +87,8 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 *************************************************************************
 
 # Getting and Cleaning Data 
-# Course Project 
-# Code Book
+  Course Project 
+  Code Book
 
 *************************************************************************
 
