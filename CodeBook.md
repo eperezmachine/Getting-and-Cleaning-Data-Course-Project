@@ -53,8 +53,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 *************************************************************************
 
-##  3. Uses descriptive activity names to name the activities in the 
-       data set.
+##  3. Uses descriptive activity names to name the activities in the data set.
 
 3.1. Read the activity_labels.txt file from the "/UCI HAR Dataset" folder 
      and store the data in a variable called "activity"
